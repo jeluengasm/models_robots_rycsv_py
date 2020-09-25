@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <!-- Launch simulation -->
+    <include file="$(find robots_rycsv_description)/launch/robot_exer_simulation.launch" />
+
+    <!-- Launch model node -->
+    <node pkg="models_robots_rycsv_py" type="vel_pub_rbt_2.py" name="robot_model" />
+
+</launch>
